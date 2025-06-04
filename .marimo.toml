@@ -1,0 +1,8 @@
+[package_management]
+manager = "uv"
+[display]
+cell_output = "above"
+dataframes = "rich"
+default_width = "medium"
+theme = "light"
+code_editor_font_size = 16
