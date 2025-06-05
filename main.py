@@ -18,7 +18,7 @@ app = marimo.App(width="medium")
 def _(mo):
     mo.md(
         r"""
-    # Kolokwium NWP - 9.06.2025 - zadanie z SQL
+    # Kolokwium NWP - 10.06.2025 - zadanie z SQL
 
     W podkatalogu `data` mamy trzy pliki z danymi, których strukturę i zawartość można poznać na podstawie początkowych komórek notatnika. Dwa pliki dotyczą wyników pierwszej tury wyborów prezydenckich z bieżącego (2025) roku (źródło: portal Państwowej Komisji Wyborczej), a jeden - demografii Polski w rozbiciu na powiaty wg. stanu z 2023 roku (nowszych danych GUS nie ma).
 
@@ -115,6 +115,12 @@ def _(plt, wyniki_ogolne):
     plt.legend(_legend, loc="upper right", bbox_to_anchor=(1.7, 1))
     plt.tight_layout()
     plt.gca()
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""## Poniżej proszę stworzyć komórki z kodem wypełniającym polecenie zadania""")
     return
 
 
