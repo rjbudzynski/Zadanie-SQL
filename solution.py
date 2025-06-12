@@ -124,6 +124,12 @@ def _(mo):
     return
 
 
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""Jeśli ktoś woli, to przygotowanie danych do wykresów można wykonać w trzech krokach zamiast w jednym: stworzyć `t1`, następnie `t2`, i na końcu `procenty` &mdash; najlepiej każdy krok w oddzielnej komórce.""")
+    return
+
+
 @app.cell
 def _(mo):
     procenty = mo.sql(
